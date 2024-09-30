@@ -1,0 +1,24 @@
+.taskHead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    button {
+        background-color: #343c80; /* Red background for remove button */
+        color: white; /* Text color */
+        border: none; /* No border */
+        padding: 5px 10px; /* Padding */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s ease; /* Transition for background color */
+    }
+    
+    button:hover {
+        background-color: #2289ff; /* Darker red on hover */
+    }
+    
+    
+}

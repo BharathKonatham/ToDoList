@@ -1,0 +1,60 @@
+.taskListContainer {
+    max-height: 330px; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    box-shadow: inset 0px 0px 5px gray; /* Inner shadow for depth */
+    padding: 1rem; /* Use rem for better scalability */
+    background-color: #f9f9f9; /* Background color */
+}
+
+.taskItem, .taskInComplete {
+    position: relative;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out elements */
+    padding: 0.75rem 1rem; /* Padding for the item */
+    margin: 0.9rem 0.25rem; /* Spacing between items */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.taskInComplete {
+    box-shadow: 0 0 5px 2px red; /* Red shadow for incomplete tasks */
+}
+
+.taskItem h6, .taskInComplete h6 {
+    flex-grow: 1; /* Allow the text to grow */
+    margin: 0; /* Remove default margin */
+    font-size: 1rem; /* Font size */
+    line-height: 1.5; /* Line height for better readability */
+    text-overflow: ellipsis; /* Show ellipsis for overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow text */
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem; /* Space between checkbox and text */
+}
+
+button {
+    background-color: #ff4444; /* Red background for remove button */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 0.5rem 1rem; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #ff2222; /* Darker red on hover */
+}
+
+.noItems {
+    border: none;
+}
+
+.checked {
+    text-decoration: 3px red line-through;
+}
